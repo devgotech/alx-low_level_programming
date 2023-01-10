@@ -1,5 +1,4 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
  * read_textfile - a function that reads a text file and prints it
  *                to POSIX standard output.
@@ -10,10 +9,10 @@
  * Return: 0 if it fails or actual number of letters it could
  *         read and print
 */
-ssize_t read_textfile(const char *filename, size_t letters)
+size_t read_textfile(const char *filename, size_t letters)
 {
 	int file;
-	ssize_t read_check, wcount;
+	size_t read_check, wcount;
 	char *buffer;
 
 	if (filename == NULL) /*check if file is present*/
